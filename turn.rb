@@ -1,4 +1,4 @@
-require './player'
+# require './player'
 
 class Turn
   attr_reader :player
@@ -27,11 +27,11 @@ class Turn
 
 end
 
-example_player_1 = Player.new(1)
+# example_player_1 = Player.new(1)
 
-example_turn_0 = Turn.new(example_player_1)
+# example_turn_0 = Turn.new(example_player_1)
 
+# # p example_turn_0
+
+# example_turn_0.pose_question
 # p example_turn_0
-
-example_turn_0.pose_question
-p example_turn_0
