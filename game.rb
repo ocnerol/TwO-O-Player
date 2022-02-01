@@ -1,6 +1,3 @@
-require './player.rb'
-require './turn.rb'
-
 class Game
 
   def initialize(player_1, player_2)
@@ -43,8 +40,3 @@ class Game
   end
 
 end
-
-p1 = Player.new(1)
-p2 = Player.new(2)
-
-Game.new(p1, p2)

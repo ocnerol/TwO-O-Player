@@ -1,5 +1,3 @@
-# require './player'
-
 class Turn
   attr_reader :player
   def initialize(player)
@@ -27,12 +25,3 @@ class Turn
   end
 
 end
-
-# example_player_1 = Player.new(1)
-
-# example_turn_0 = Turn.new(example_player_1)
-
-# # p example_turn_0
-
-# example_turn_0.pose_question
-# p example_turn_0
