@@ -1,9 +1,10 @@
 class Player
 
-  attr_reader :lives
+  attr_reader :lives, :name
   
-  def initialize
+  def initialize(id)
     @lives = 3
+    @name = "Player #{id}"
   end
 
   def lose_point
@@ -12,18 +13,18 @@ class Player
 
 end
 
-example_player_0 = Player.new
+# example_player_0 = Player.new(0)
 
-p example_player_0.lives
+# p example_player_0.lives
 
-example_player_0.lose_point
+# example_player_0.lose_point
 
-p example_player_0.lives
+# p example_player_0.lives
 
-example_player_0.lose_point
+# example_player_0.lose_point
 
-p example_player_0.lives
+# p example_player_0.lives
 
-example_player_0.lose_point
+# example_player_0.lose_point
 
-p example_player_0.lives
+# p example_player_0.lives
