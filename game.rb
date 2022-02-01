@@ -6,7 +6,6 @@ class Game
   def initialize(player_1, player_2)
     @player_1 = player_1
     @player_2 = player_2
-    @in_session = true
     @last_player = nil
     start
   end
