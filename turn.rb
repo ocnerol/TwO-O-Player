@@ -7,6 +7,7 @@ class Turn
     @number_1 = rand(1..20)
     @solution = @number_0 + @number_1
     @player = player
+    pose_question
   end
 
   def pose_question
