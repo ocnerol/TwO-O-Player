@@ -1,5 +1,5 @@
 class Turn
-  attr_reader :player
+
   def initialize(player)
     @number_0 = rand(1..20)
     @number_1 = rand(1..20)
@@ -9,14 +9,14 @@ class Turn
   end
 
   def pose_question
-    puts "#{player.name}: What does #{@number_0} plus #{@number_1} equal?"
+    puts "#{@player.name}: What does #{@number_0} plus #{@number_1} equal?"
     print "> "
     player_answer = gets.chomp.to_i
-    if (correct?(player_answer))
-      puts "#{player.name}: YES! You are correct."
+    if correct?(player_answer)
+      puts "#{@player.name}: YES! You are correct."
     else
-      puts "#{player.name}: Seriously? No!"
-      player.lose_point
+      puts "#{@player.name}: Seriously? No!"
+      @player.lose_point
     end
   end
 

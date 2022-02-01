@@ -12,12 +12,14 @@ class Game
   end
 
   def final_report
-    winner = @player_1.lives > @player_2.lives ? @player_1 : @player_2
+    # since only one player will reach 0 lives first:
+    winner = (@player_1.lives > @player_2.lives) ? @player_1 : @player_2
     puts "#{winner.name} wins with a score of #{winner.lives}/3"
   end
 
   def new_turn
-    player_in_next_turn = @last_player == @player_1 ? @player_2 : @player_1
+    # switch players for new turn
+    player_in_next_turn = (@last_player == @player_1) ? @player_2 : @player_1
     @last_player = player_in_next_turn
     Turn.new(player_in_next_turn)
     scoreboard
